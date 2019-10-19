@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<title>BioThings</title>
+<meta charset="UTF-8">
+ <head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Merriweather&display=swap" rel="stylesheet"> 
+  <script src="BM.js"></script>
+</head> 
+<body>
+ <!-- The sidebar -->
+<div class="sidebar">
+  <span class="active" id = "home" onclick = "navClick(this.id)">Home</span>
+  <span id = "addProduct" onclick = "navClick(this.id)">Add Product</span>
+  <span id = "products" onclick = "navClick(this.id)">Products</span>
+</div>
+
+<div id = "homeContent" class = "content" style="visibility : hidden;">
+
+<h1>Welcome to BioThings! Your go to company for all things Biomedicine!</h1>
+<img src="https://i.ytimg.com/vi/FveF-we6lcE/maxresdefault.jpg" style="height: 300px; width: 300px;" alt = "No Interwebs!">
+<img src="https://i.redd.it/k8aoxlb9bwl31.jpg" style="height: 300px; width: 300px; position: relative; top: 100px; left: 20px;" alt = "No Interwebs!">
+<img src="https://i.kym-cdn.com/news_feeds/icons/mobile/000/035/914/6d3.jpg" style="height: 300px; width: 300px; position: relative; top: 200px; left: 40px;" alt = "No Interwebs!">
+<img src="https://i.ytimg.com/vi/YFXlzKDjL8E/maxresdefault.jpg" style="height: 300px; width: 300px; position: relative; top: 300px; left: 60px;" alt = "No Interwebs!">
+
+
+</div>
+
+<div id = "addProductContent" class = "content" style="visibility : hidden;">
+Product Name: <input type="text" id="productName">
+<p>
+Product Price: <input type="text" id="productPrice">
+<p>
+<p>
+<button type="button" id="productButton" >Submit Product</button>
+</p>
+</div>
+
+<div id = "productsContent" class = "content" style = "visibility: hidden;">
+<h1>Products</h1>
+
+<ul>
+  <li>Uh oh</li>
+  <li>Stinky</li>
+  <li>Poop</li>
+</ul>
+</div>
+</html>
