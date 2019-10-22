@@ -23,10 +23,6 @@ function navClick(id){
             currentContent = $('homeContent');
             active = $('home');
             break;
-        case 'addProduct':
-            currentContent = $('addProductContent');
-            active = $('addProduct');
-            break;
         case 'products':
             currentContent = $('productsContent');
             active = $('products');
@@ -37,9 +33,4 @@ function navClick(id){
    }
 
    currentContent.style.visibility = 'visible';
-}
-
-function adjust_textarea(h) {
-    h.style.height = "20px";
-    h.style.height = (h.scrollHeight)+"px";
 }

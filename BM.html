@@ -3,15 +3,15 @@
 <title>BioThings</title>
 <meta charset="UTF-8">
  <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="resources/style.css">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Merriweather&display=swap" rel="stylesheet"> 
-  <script src="BM.js"></script>
+  <script src = "resources/BM.js"></script>
+  <script src = "script.js"></script>
 </head> 
 <body style="background-color: #e6fff7;">
  <!-- The sidebar -->
 <div class="sidebar">
   <span class="active" id = "home" onclick = "navClick(this.id)">Home</span>
-  <span id = "addProduct" onclick = "navClick(this.id)">Add Product</span>
   <span id = "products" onclick = "navClick(this.id)">Products</span>
   <span id = "calculator" onclick= "navClick(this.id)">Calculator</span>
 </div>
@@ -21,30 +21,32 @@
 <h1>Welcome to BioThings! Your go to company for all things Biomedicine!</h1>
 <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpngimg.com%2Fuploads%2Frobot%2Frobot_PNG66.png&f=1&nofb=1" style="height: 300px; width: 300px;" alt = "No Interwebs!">
 <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpurepng.com%2Fpublic%2Fuploads%2Flarge%2Fpurepng.com-doctordoctorsdoctors-and-nursesclinicianmedical-practitionernotepadfemale-1421526857305gcpof.png&f=1&nofb=1" style="height: 300px; width: 300px; position: relative; top: 100px; left: 20px;" alt = "No Interwebs!">
-<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.edgarsnyder.com%2Fimages%2Flarge-550%2Fmedical%2Fhip-implant-xray.jpg&f=1&nofb=1" style="height: 300px; width: 300px; position: relative; top: 200px; left: 40px;" alt = "No Interwebs!">
-<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblog.medicaresolutions.com%2Fwp-content%2Fuploads%2FHappy-senior-people-leaving-hospital-1200x800.jpg&f=1&nofb=1" style="height: 300px; width: 300px; position: relative; top: 300px; left: 60px;" alt = "No Interwebs!">
-
+<img src="https://tecnico.ulisboa.pt/files/2016/09/xiv-encontro-de-engenharia-biomedica-1140x641.jpg" style="height: 300px; width: 300px; position: relative; top: 200px; left: 40px;" alt = "No Interwebs!">
+<img src="https://i0.wp.com/engenharia360.com/wp-content/uploads/2013/01/engenhariabiomedica-gui-das-engenharias.jpg?resize=1000%2C667&ssl=1" style="height: 300px; width: 300px; position: relative; top: 300px; left: 60px;" alt = "No Interwebs!">
 
 </div>
 
-<div id = "addProductContent" class = "content add_product" >
+<div id = "productsContent" class = "content add_product" style = "visibility: hidden;">
+
+<h1 style="font-size: 300%;">Products</h1>
+
 Product Name: <input type="text" id="productName">
 <p>
 Product Price: <input type="text" id="productPrice">
 <p>
 <p>
-<button type="button" id="productButton" >Add Product</button>
-</p>
-</div>
+<button type="button" id="productButton">Add Product</button>
 
-<div id = "productsContent" class = "content" style = "visibility: hidden;">
-<h1>Products</h1>
-
-<ul>
-  <li>Uh oh</li>
-  <li>Stinky</li>
-  <li>Poop</li>
-</ul>
+<table cellspacing = "30">
+  <tr>
+    <th><b>Name</b></th>
+    <th><b>Price</b></th>
+  </tr>
+  <tr>
+    <td>Teste</td>
+    <td>1€</td>
+  </tr>
+</table>
 </div>
 
 <div id = "calculatorContent" class = "content calculator" style = "visibility: hidden;">
@@ -66,7 +68,10 @@ Product Price: <input type="text" id="productPrice">
   <button id = "button8" type="button" class = "calculator_button">8</button>
   <button id = "button9" type="button" class = "calculator_button">9</button>
   <button id = "buttonClear" type="button" class = "calculator_button op_button" style="width: 100px;">CLEAR</button>
-
-
 </div>
+
+<button type="button" onclick="darkMode()" style="position: fixed; bottom: 10px;">Dark Mode</button>
+<button type="button" onclick="rainbowMode()" style = "position: fixed; bottom: 50px;">Rainbow Mode</button>
+
+</body>
 </html>
