@@ -7,32 +7,33 @@
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Merriweather&display=swap" rel="stylesheet"> 
   <script src="BM.js"></script>
 </head> 
-<body>
+<body style="background-color: #e6fff7;">
  <!-- The sidebar -->
 <div class="sidebar">
   <span class="active" id = "home" onclick = "navClick(this.id)">Home</span>
   <span id = "addProduct" onclick = "navClick(this.id)">Add Product</span>
   <span id = "products" onclick = "navClick(this.id)">Products</span>
+  <span id = "calculator" onclick= "navClick(this.id)">Calculator</span>
 </div>
 
 <div id = "homeContent" class = "content" style="visibility : hidden;">
 
 <h1>Welcome to BioThings! Your go to company for all things Biomedicine!</h1>
-<img src="https://i.ytimg.com/vi/FveF-we6lcE/maxresdefault.jpg" style="height: 300px; width: 300px;" alt = "No Interwebs!">
-<img src="https://i.redd.it/k8aoxlb9bwl31.jpg" style="height: 300px; width: 300px; position: relative; top: 100px; left: 20px;" alt = "No Interwebs!">
-<img src="https://i.kym-cdn.com/news_feeds/icons/mobile/000/035/914/6d3.jpg" style="height: 300px; width: 300px; position: relative; top: 200px; left: 40px;" alt = "No Interwebs!">
-<img src="https://i.ytimg.com/vi/YFXlzKDjL8E/maxresdefault.jpg" style="height: 300px; width: 300px; position: relative; top: 300px; left: 60px;" alt = "No Interwebs!">
+<img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpngimg.com%2Fuploads%2Frobot%2Frobot_PNG66.png&f=1&nofb=1" style="height: 300px; width: 300px;" alt = "No Interwebs!">
+<img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpurepng.com%2Fpublic%2Fuploads%2Flarge%2Fpurepng.com-doctordoctorsdoctors-and-nursesclinicianmedical-practitionernotepadfemale-1421526857305gcpof.png&f=1&nofb=1" style="height: 300px; width: 300px; position: relative; top: 100px; left: 20px;" alt = "No Interwebs!">
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.edgarsnyder.com%2Fimages%2Flarge-550%2Fmedical%2Fhip-implant-xray.jpg&f=1&nofb=1" style="height: 300px; width: 300px; position: relative; top: 200px; left: 40px;" alt = "No Interwebs!">
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblog.medicaresolutions.com%2Fwp-content%2Fuploads%2FHappy-senior-people-leaving-hospital-1200x800.jpg&f=1&nofb=1" style="height: 300px; width: 300px; position: relative; top: 300px; left: 60px;" alt = "No Interwebs!">
 
 
 </div>
 
-<div id = "addProductContent" class = "content" style="visibility : hidden;">
+<div id = "addProductContent" class = "content add_product" >
 Product Name: <input type="text" id="productName">
 <p>
 Product Price: <input type="text" id="productPrice">
 <p>
 <p>
-<button type="button" id="productButton" >Submit Product</button>
+<button type="button" id="productButton" >Add Product</button>
 </p>
 </div>
 
@@ -44,5 +45,28 @@ Product Price: <input type="text" id="productPrice">
   <li>Stinky</li>
   <li>Poop</li>
 </ul>
+</div>
+
+<div id = "calculatorContent" class = "content calculator" style = "visibility: hidden;">
+  <input type="text" id = "result" style="margin-top: 30px; width: 200px; height: 40px; background-color: black; color: whitesmoke;" readonly>
+  <p>
+  <button id = "button1" type="button" class = "calculator_button">1</button>
+  <button id = "button2" type="button" class = "calculator_button">2</button>
+  <button id = "button3" type="button" class = "calculator_button">3</button>
+  <button id = "buttonAdd" type="button" class = "calculator_button op_button">+</button>
+  <button id = "buttonSub" type="button" class = "calculator_button op_button">-</button>
+  <p>
+  <button id = "button4" type="button" class = "calculator_button">4</button>
+  <button id = "button5" type="button" class = "calculator_button">5</button>
+  <button id = "button6" type="button" class = "calculator_button">6</button>
+  <button id = "buttonMult" type="button" class = "calculator_button op_button">X</button>
+  <button id = "buttonDiv" type="button" class = "calculator_button op_button">%</button>
+  <p>
+  <button id = "button7" type="button" class = "calculator_button">7</button>
+  <button id = "button8" type="button" class = "calculator_button">8</button>
+  <button id = "button9" type="button" class = "calculator_button">9</button>
+  <button id = "buttonClear" type="button" class = "calculator_button op_button" style="width: 100px;">CLEAR</button>
+
+
 </div>
 </html>

@@ -31,6 +31,9 @@ function navClick(id){
             currentContent = $('productsContent');
             active = $('products');
             break;
+        case 'calculator':
+            currentContent = $('calculatorContent');
+            active = $('calculator');
    }
 
    currentContent.style.visibility = 'visible';

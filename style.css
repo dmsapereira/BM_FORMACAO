@@ -5,7 +5,7 @@
   width: 200px;
   background-color: #f1f1f1;
   position: fixed;
-  height: 160px;
+  height: 200px;
   overflow: auto;
 }
 
@@ -57,6 +57,39 @@ div.content {
     float: none;
   }
 } 
+
+.content.add_product{
+  visibility : hidden; 
+  margin-left: 300px; 
+  margin-top: 50px;
+  height:400px;
+  width: 320px;
+}
+
+.content.calculator{
+  margin-left: 300px;
+  margin-top: 50px;
+  background-color: #4d4dff;
+  text-align : center;
+  height:400px;
+  width: 320px;
+}
+
+.calculator_button{
+  margin-top: 10%;
+  background-color: #b3b3ff;
+  height: 50px;
+  width: 50px;
+}
+
+.calculator_button.op_button{
+  position: relative;
+  left: 20px;
+}
+
+.calculator_button:hover{
+  background-color: #e6e6ff;
+}
 
 h1 {
   margin-left: 50%;
