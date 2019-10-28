@@ -212,13 +212,19 @@ function addProductsAction(){
 var products = [];
 
 function addProductsAction(){
-    product = new Product($('productName').value, $('productPrice').value);
-    products.push(product);
-    var row = $('productTable').insertRow();
-    var productName = row.insertCell();
-    var productPrice = row.insertCell();
-    productName.innerHTML = product.productName;
-    productPrice.innerHTML = product.productPrice + "€";
+    if(isNaN($('productPrice').value))
+        alert("Invalid Price!");
+    else if($('productName').value == "")
+        alert("Invalid name");
+    else{
+        product = new Product($('productName').value, $('productPrice').value);
+        products.push(product);
+        var row = $('productTable').insertRow();
+        var productName = row.insertCell();
+        var productPrice = row.insertCell();
+        productName.innerHTML = product.productName;
+        productPrice.innerHTML = product.productPrice + "€";
+    }
 }
 
 function sumPriceAction(){
